@@ -15,8 +15,6 @@ class Board
   def valid_move?(start_pos)
     raise 'Invalid starting cup' unless start_pos.between?(0, 5) || start_pos.between?(7, 12)
     raise 'Invalid starting cup' if @cups[start_pos].empty?
-
-    # true
   end
 
   def make_move(start_pos, current_player_name)
@@ -38,10 +36,10 @@ class Board
     end
 
     render
-    next_turn(cup_idx, current_player_name)
+    next_turn(cup_idx)
   end
 
-  def next_turn(ending_cup_idx, current_player_name)
+  def next_turn(ending_cup_idx)
     if ending_cup_idx == 6 || ending_cup_idx == 13
       :prompt
     elsif @cups[ending_cup_idx].length == 1
