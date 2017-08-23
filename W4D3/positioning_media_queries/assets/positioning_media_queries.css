@@ -114,27 +114,35 @@ label {
     display: block;
 }
 
-@media all and (max-width: 900px) {
 .hamburger-dropdown {
   display: none;
 }
 
-.hamburger-dropdown > li {
-  background: url(../assets/hamburger.png);
-  background-size: 50px 50px;
-  height: 50px;
-  width: 50px;
-  position: relative;
-}
-
-.hamburger-dropdown ul {
-  top: 50px;
-  left: 0;
-  position: absolute;
-}
-
-.hamburger-dropdown:hover ul {
-    display: flex;
-    background: black;
+@media all and (max-width: 900px) {
+  .hamburger-dropdown > li {
+    background: url(../assets/hamburger.png);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+    position: relative;
   }
-};
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger-dropdown {
+    display: block;
+  }
+
+  .hamburger-dropdown ul {
+    top: 50px;
+    left: 0;
+    position: absolute;
+  }
+
+  .hamburger-dropdown:hover ul {
+      display: flex;
+      background: white;
+    }
+  }
