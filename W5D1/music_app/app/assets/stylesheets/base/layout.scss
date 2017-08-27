@@ -1,0 +1,114 @@
+// /* Define application-wide selectors here!*/
+//
+// html {
+// 	position: relative;
+// 	height: 100%;
+// }
+//
+body {
+	width: 80%;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+.buttons a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #37393d;
+  border-radius: 3px;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.buttons a:hover {
+	color: #FFFFFF;
+  background-color: #989ba0;
+}
+//
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #37393d;
+  border-radius: 3px;
+  color: #FFFFFF;
+  padding: 5px 10px 5px 10px;
+// 	background-color: $light-blue;
+// 	border-color: $light-blue;
+// 	color: white;
+// 	font-weight: bold;
+// 	padding: 6px 7.5px;
+// 	border-radius: 2px;
+// 	text-transform: uppercase;
+// 	// transition:
+// 	font-family: $sans-serif;
+// 	font-size: 11px;
+// 	text-align: center;
+}
+//
+// button:hover {
+// 	background-color: $dark-blue;
+// 	border-color: $darkest-blue;
+// }
+//
+a {
+  text-decoration: none;
+  color: #37393d;
+}
+
+a:hover {
+	color: #989ba0;
+}
+
+.error li {
+  font-size: 12px;
+  text-align: inherit;
+  display: block;
+  padding: 0;
+}
+//
+// h2 {
+//   font-size: 22px;
+//   font-weight: bold;
+//   font-style: italic;
+// }
+//
+// h2:hover {
+//   text-decoration: underline;
+// }
+//
+// h3 {
+//   font-size: 10px;
+//   color: $gray;
+//   font-weight: normal;
+// }
+//
+// /*
+// 	Header Rules
+// */
+//
+// hr {
+// 	border: 0;
+// 	height: 1px;
+// 	background-color: $light-gray;
+// }
+//
+// .hr-top, .hr-bottom {
+// 	width: 100%;
+// 	margin: 0;
+// }
+//
+// .hr-top {
+// 	height: 2px;
+// 	margin-bottom: 1px;
+// }
+//
+// .hidden {
+// 	display: none;
+// }

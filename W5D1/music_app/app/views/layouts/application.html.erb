@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music App</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header class="main-nav">
+      <nav>
+        <% if logged_in? %>
+          <%= current_user.email %>
+          <%= button_to "Log Out", session_url, method: :delete %>
+        <% else %>
+          <%= link_to 'Sign Up', new_user_url %>
+          <%= link_to 'Log In', new_session_url %>
+        <% end %>
+      </nav>
+    </header>
+
+    <header class="main-header">
+      <h1><%= link_to "Music App", bands_url %></h1>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>

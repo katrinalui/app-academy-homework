@@ -1,0 +1,26 @@
+<section class="main-content">
+  <div class="band-content">
+    <img src="http://lorempixel.com/230/230/people/">
+    <br>
+    <p><%= @band.name %></p>
+  </div>
+
+  <div class="buttons">
+    <%= link_to "Add Album", new_band_album_url(@band) %>
+    <%= link_to "Edit Band", edit_band_url(@band) %>
+    <%= link_to "Delete Band", band_url(@band), method: :delete %>
+  </div>
+
+    <% if !@band.albums.empty? %>
+      <h1>Albums</h1>
+      <div class="band-album">
+      <% @band.albums.each_with_index do |album, i| %>
+        <div class="band-album-item">
+          <a href="<%= album_url(album) %>"><img src="http://lorempixel.com/230/230/abstract/<%= i %>"></a>
+          <br>
+          <p><a href="<%= album_url(album) %>"><%= album.title %></a></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>

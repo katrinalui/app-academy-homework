@@ -1,0 +1,14 @@
+<section class="main-content">
+  <div class="band-content">
+    <img src="http://lorempixel.com/230/230/abstract/">
+    <br>
+    <p><%= @album.title %></p>
+  </div>
+
+  <div class="buttons">
+    <%= link_to "Edit Album", edit_album_url(@album) %>
+    <%= link_to "Delete Album", album_url(@album), method: :delete %>
+    <br>
+    <%= link_to "Band Page", band_url(@album.band_id) %>
+  </div>
+</section>

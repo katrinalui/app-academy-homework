@@ -1,0 +1,19 @@
+.band-content {
+  display: block;
+  justify-content: center;
+}
+
+.band-album {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.band-album h1 {
+  display: block;
+}
+
+.band-album-item {
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+<section class="band-index">
+  <% @bands.each_with_index do |band, i| %>
+    <div class="band-index-item">
+      <a href="<%= band_url(band) %>" ><img src="http://lorempixel.com/230/230/people/<%= i %>"></a>
+    <br>
+    <%= link_to band.name, band_url(band) %>
+    </div>
+  <% end %>
+
+</section>
+
+<div class="buttons">
+  <%= link_to "Add A Band", new_band_url %>
+</div>

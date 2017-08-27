@@ -1,0 +1,35 @@
+<section class="main-content">
+  <h1>Add an Album</h1>
+
+  <%= render 'shared/errors' %>
+
+  <form action="<%= albums_url %>" method="post">
+    <%= auth_token %>
+
+    <select name="album[band_id]">
+      <% @bands.each do |band| %>
+      <option <%= @band == band ? "selected" : "" %>
+        value="<%= band.id %>"> <%= band.name %> </option>
+      <% end %>
+    </select>
+
+    <br>
+
+    <input type="text" name="album[title]" placeholder="Title">
+
+    <br>
+
+    <input type="text" name="album[year]" placeholder="Year">
+
+    <br>
+
+    <label for="studio">Studio</label>
+    <input type="radio" name="album[studio]" value="true" checked>
+    <label for="live">Live</label>
+    <input type="radio" name="album[studio]" value="false">
+
+    <br>
+
+    <input type="submit">
+  </form>
+</section>

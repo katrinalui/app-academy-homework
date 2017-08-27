@@ -1,0 +1,20 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.main-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #63676d;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+}
+
+.main-nav a:hover {
+  color: #FFFFFF;
+  background-color: #989ba0;
+}

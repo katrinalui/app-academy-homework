@@ -1,0 +1,36 @@
+<section class="main-content">
+  <h1>Edit an Album</h1>
+
+  <%= render 'shared/errors' %>
+
+  <form action="<%= albums_url %>" method="post">
+    <input type="hidden" name="_method" value="PATCH">
+    <%= auth_token %>
+
+    <select name="album[band_id]">
+      <% @bands.each do |band| %>
+      <option <%= @album.band_id == band.id ? "selected" : "" %>
+        value="<%= band.id %>"> <%= band.name %> </option>
+      <% end %>
+    </select>
+
+    <br>
+
+    <input type="text" name="album[title]" value="<%= @album.title %>">
+
+    <br>
+
+    <input type="text" name="album[year]" value="<%= @album.year %>">
+
+    <br>
+
+    <label for="studio">Studio</label>
+    <input type="radio" name="album[studio]" value="true" <%= @album.studio ? "checked" : "" %>>
+    <label for="live">Live</label>
+    <input type="radio" name="album[studio]" value="false" <%= @album.studio ? "" : "checked" %>>
+
+    <br>
+
+    <input type="submit">
+  </form>
+</section>

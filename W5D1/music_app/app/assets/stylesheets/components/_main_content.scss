@@ -1,0 +1,18 @@
+.main-content {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: #37393d;
+}
+
+.main-content h1 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 30px;
+}
+
+.main-content input {
+  padding: 5px;
+  margin: 5px;
+}
