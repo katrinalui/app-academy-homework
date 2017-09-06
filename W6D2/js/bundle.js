@@ -177,7 +177,10 @@ View.prototype.exercise7 = function(){
   //You should push the button for exercise 6 first to try it on the
   //rainbow.
 
-  
+  $('#easel').on("mouseover", ".square", event => {
+    const $sqr = $(event.currentTarget);
+    console.log($sqr.css("background-color"));
+  });
 };
 
 
