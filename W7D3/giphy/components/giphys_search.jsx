@@ -24,10 +24,10 @@ class GiphysSearch extends React.Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} value={this.state.searchTerm}></input>
           <br />
-          <input type="submit" onClick={this.handleSubmit}></input>
+          <input type="submit" value="Get your giphys!"></input>
         </form>
         <GiphysIndex giphys={this.props.giphys} />
       </div>

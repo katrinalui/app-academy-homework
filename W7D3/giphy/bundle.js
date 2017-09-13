@@ -12264,10 +12264,10 @@ var GiphysSearch = function (_React$Component) {
         null,
         _react2.default.createElement(
           'form',
-          null,
+          { onSubmit: this.handleSubmit },
           _react2.default.createElement('input', { onChange: this.handleChange, value: this.state.searchTerm }),
           _react2.default.createElement('br', null),
-          _react2.default.createElement('input', { type: 'submit', onClick: this.handleSubmit })
+          _react2.default.createElement('input', { type: 'submit', value: 'Get your giphys!' })
         ),
         _react2.default.createElement(_giphys_index2.default, { giphys: this.props.giphys })
       );
